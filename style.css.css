@@ -1,0 +1,137 @@
+/* style.css */
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(to right, #fff6e5, #ffecd2);
+  color: #4b2e2e;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+header {
+  text-align: center;
+  padding: 3rem 2rem;
+  background: linear-gradient(to right, #ff8a00, #e52e71);
+  color: white;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+nav {
+  background: #ffe0b2;
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+nav a {
+  text-decoration: none;
+  color: #bf360c;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+nav a:hover {
+  color: #ff7043;
+}
+
+section {
+  padding: 3rem 2rem;
+  max-width: 900px;
+  margin: auto;
+}
+
+section img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 12px;
+  margin-top: 1.5rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.project {
+  background: #fff3e0;
+  border-left: 6px solid #ff6f00;
+  padding: 1.5rem;
+  margin-top: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.project button {
+  margin-top: 1rem;
+  padding: 0.6rem 1.2rem;
+  background-color: #ff7043;
+  border: none;
+  border-radius: 25px;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.project button:hover {
+  background-color: #e64a19;
+}
+
+footer {
+  text-align: center;
+  padding: 1.5rem;
+  background: #d84315;
+  color: white;
+  margin-top: 2rem;
+}
+
+.dark-mode {
+  background: linear-gradient(to right, #3e2723, #1b0000);
+  color: #ffe0b2;
+}
+
+.dark-mode nav {
+  background-color: #4e342e;
+}
+
+.dark-mode nav a {
+  color: #ffccbc;
+}
+
+.dark-mode nav a:hover {
+  color: #ffab91;
+}
+
+.dark-mode header,
+.dark-mode footer {
+  background: #bf360c;
+}
+
+button#modeToggle {
+  margin-top: 1.5rem;
+  padding: 0.75rem 1.5rem;
+  background-color: #ffe0b2;
+  border: 2px solid #ff5722;
+  border-radius: 30px;
+  cursor: pointer;
+  color: #e64a19;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+button#modeToggle:hover {
+  background-color: #ff5722;
+  color: white;
+}
+
+.dark-mode button#modeToggle {
+  background-color: #5d4037;
+  border-color: #ffe0b2;
+  color: #ffe0b2;
+}
+
+.dark-mode button#modeToggle:hover {
+  background-color: #ffe0b2;
+  color: #3e2723;
+}
